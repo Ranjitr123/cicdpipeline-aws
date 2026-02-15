@@ -20,6 +20,6 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd /var/www/html/your-repo
+          cd /var/www/html/cicdpipeline-aws
           git pull origin main
           sudo systemctl restart apache2
